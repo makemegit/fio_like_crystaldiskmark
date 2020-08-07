@@ -1,4 +1,6 @@
 #!/bin/bash
+## Test your drive using fio. The output should be similar to CrystalDiskMark on Windows
+## by @makeme v.2020-08-07
 if ! [ -x "$(command -v fio)" ]; then
   echo 'Please install fio' >&2
   exit 1
