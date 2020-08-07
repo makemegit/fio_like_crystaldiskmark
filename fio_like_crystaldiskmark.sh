@@ -41,7 +41,7 @@ RADN4K_Q1T1_write ()
 {
   fio --name=$filename$FUNCNAME --bs=4k --rw=randwrite --max-jobs=1 --iodepth=2 $OPTIONS | grep WRITE | awk '{print $3}' | sed 's/(//;s/),//' && rm $filename*
 }
-## Lets go
+## Let's go
 echo -e "TestName READ WRITE" "\n"\
 "SEQ1M_Q8T1" $(SEQ1M_Q8T1_read) $(SEQ1M_Q8T1_write)"\n"\
 "SEQ1M_Q1T1" $(SEQ1M_Q1T1_read) $(SEQ1M_Q1T1_write)"\n"\
