@@ -34,4 +34,4 @@ RADN4K_Q32T16  749kB/s  544kB/s
 RADN4K_Q1T1    168kB/s  177kB/s
 ```
 
-# Please note that the two tests are different and thus the results can be different
+Please note that the two tests are different and thus the results can be different
