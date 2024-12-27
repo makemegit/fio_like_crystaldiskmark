@@ -1,0 +1,5 @@
+v.2024-12-27
+
+- Added changelog :)
+- Echo results line by line.
+- Adding "df -h ." so it will give you info about which drive you are testing.  

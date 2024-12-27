@@ -1,7 +1,7 @@
 #!/bin/bash
 ## Test your drive using fio. The output should be similar to CrystalDiskMark on Windows
 ## fio_like_crystaldiskmark.sh
-## by @makeme v.2020-08-07
+## by @makeme v.2024-12-27
 if ! [ -x "$(command -v fio)" ]; then
   echo 'Please install fio' >&2
   exit 1
@@ -41,6 +41,9 @@ RADN4K_Q1T1_write ()
 {
   fio --name=$filename$FUNCNAME --bs=4k --rw=randwrite --max-jobs=1 --iodepth=2 $OPTIONS | grep WRITE | awk '{print $3}' | sed 's/(//;s/),//' && rm $filename*
 }
+## Little info before test
+df -h .
+echo
 ## Let's go
 echo -e "Test_Name    READ   WRITE"
 echo -e "SEQ1M_Q8T1  " $(SEQ1M_Q8T1_read) $(SEQ1M_Q8T1_write)
