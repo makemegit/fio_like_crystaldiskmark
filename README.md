@@ -6,14 +6,14 @@ The goal is to have the CrystalDiskMark's output in Windows on Linux using fio.
 # Install and Run: 
 ```console
 wget https://raw.githubusercontent.com/makemegit/fio_like_crystaldiskmark/master/fio-like-crystaldiskmark
-chmod +x fio_like_crystaldiskmark
-./fio_like_crystaldiskmark
+chmod +x fio-like-crystaldiskmark
+./fio-like-crystaldiskmark
 ```
 
 # Output examples:
 
 ```console
-$ fio_like_crystaldiskmark.sh
+$ fio-like-crystaldiskmark
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/nvme0n1p1  458G  309G  126G  72% /
 
@@ -23,7 +23,7 @@ SEQ1M_Q1T1     3264MB/s  2942MB/s
 RADN4K_Q32T16  919MB/s   302MB/s
 RADN4K_Q1T1    84.0MB/s  196MB/s
 
-$ fio_like_crystaldiskmark.sh
+$ fio-like-crystaldiskmark
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda        916G  490G  380G  57% /storage
 
