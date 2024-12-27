@@ -35,3 +35,10 @@ RADN4K_Q1T1    168kB/s  177kB/s
 ```
 
 Please note that the two tests are different and thus the results can be different
+
+# Changelog: v.2024-12-27
+
+- ADD: Added changelog :)
+- ADD: Adding "df -h ." , so it will give you info about which drive you are testing. 
+- CHANGE: Echo results line by line.
+- CHANGE: Tweak fio's setting more like "KDiskMark 3.1.3". This ensures more consistent results on different fio wrappers.

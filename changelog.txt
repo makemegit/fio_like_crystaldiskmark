@@ -1,5 +1,6 @@
 v.2024-12-27
 
-- Added changelog :)
-- Echo results line by line.
-- Adding "df -h ." so it will give you info about which drive you are testing.  
+- ADD: Added changelog :)
+- ADD: Adding "df -h ." so it will give you info about which drive you are testing. 
+- CHANGE: Echo results line by line.
+- CHANGE: Tweak fio's setting more like "KDiskMark 3.1.3". This ensures more consistent results on different fio wrappers.
