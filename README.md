@@ -6,8 +6,8 @@ The goal is to have the CrystalDiskMark's output in Windows on Linux using fio.
 # Install and Run: 
 ```console
 wget https://raw.githubusercontent.com/makemegit/fio_like_crystaldiskmark/master/fio-like-crystaldiskmark
-chmod +x fio_like_crystaldiskmark.sh
-./fio_like_crystaldiskmark.sh
+chmod +x fio_like_crystaldiskmark
+./fio_like_crystaldiskmark
 ```
 
 # Output examples:
